@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        text-align: center;
+    }
+    input, button {
+        margin: 5px;
+        padding: 10px;
+    }
+    #output {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="text" id="inputText" placeholder="Введите текст">
+        <button onclick="displayText()">Показать текст</button>
+        <div id="output"></div>
+    </div>
+    <div class="container">
+        <input type="text" id="input1" placeholder="Введите текст 1">
+        <input type="text" id="input2" placeholder="Введите текст 2">
+        <button onclick="swapValues()">Поменять местами</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
